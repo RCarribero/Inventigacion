@@ -1,8 +1,11 @@
 public class Squilter extends Pokemon implements IAgua {
 
-    public Squilter() {
+    public Squilter(int num_pokedex, String nom_pokemon, double peso, String sexo, String temporada) {
+        super(num_pokedex, nom_pokemon, peso, sexo, temporada);
     }
 
+    
+    
     @Override
     protected void atacarPlacaje() {
         System.out.println("Ataque placaje");

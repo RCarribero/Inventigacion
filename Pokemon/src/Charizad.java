@@ -1,5 +1,9 @@
 public class Charizad extends Pokemon implements IFuego {
 
+    public Charizad(int num_pokedex, String nom_pokemon, double peso, String sexo, String temporada) {
+        super(num_pokedex, nom_pokemon, peso, sexo, temporada);
+    }
+
     @Override
     public void atacarPunioFuego() {
         throw new UnsupportedOperationException("Unimplemented method 'atacarPunioFuego'");

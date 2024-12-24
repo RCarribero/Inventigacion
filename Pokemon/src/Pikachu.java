@@ -1,6 +1,7 @@
 public class Pikachu extends Pokemon implements IElectrico {
 
-    public Pikachu() {
+    public Pikachu(int num_pokedex, String nom_pokemon, double peso, String sexo, String temporada) {
+        super(num_pokedex, nom_pokemon, peso, sexo, temporada);
     }
 
     @Override

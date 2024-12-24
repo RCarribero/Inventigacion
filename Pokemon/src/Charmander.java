@@ -1,6 +1,7 @@
 public class Charmander extends Pokemon implements IFuego {
 
-    public Charmander() {
+    public Charmander(int num_pokedex, String nom_pokemon, double peso, String sexo, String temporada) {
+        super(num_pokedex, nom_pokemon, peso, sexo, temporada);
     }
 
     @Override
