@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "Ventas/src",
+        "Pruebas_array/src",
+        "Pruebas_POO/src",
+        "Pokemon/src",
+        "POO/src",
+        "Collections/src",
+        "Ventas/ventas"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}

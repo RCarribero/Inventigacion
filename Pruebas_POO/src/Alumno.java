@@ -1,4 +1,3 @@
-package Repaso.Pruebas_POO;
 
 public class Alumno {
     int id;

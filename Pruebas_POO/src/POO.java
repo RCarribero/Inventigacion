@@ -1,5 +1,3 @@
-package Repaso.Pruebas_POO;
-
 public class POO {
     public static void main(String[] args) {
         Alumno alu1 = new Alumno(1, "Ruben", "Carribero");
