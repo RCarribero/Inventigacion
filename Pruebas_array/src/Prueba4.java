@@ -1,4 +1,4 @@
-package Repaso.Pruebas_array;
+
 
 import java.util.Scanner;
 

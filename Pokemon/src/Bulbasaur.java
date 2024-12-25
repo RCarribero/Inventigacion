@@ -5,11 +5,6 @@ public class Bulbasaur extends Pokemon implements IPlanta {
     }
 
     @Override
-    protected void setNum_pokedex(int num_pokedex) {
-        super.setNum_pokedex(0002);
-    }
-    
-    @Override
     protected void atacarPlacaje() {
         System.out.println("Ataque placaje");
     }

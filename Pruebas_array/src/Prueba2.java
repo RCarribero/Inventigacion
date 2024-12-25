@@ -1,4 +1,3 @@
-package  Repaso.Pruebas_array;
 import java.util.Scanner;
 public class Prueba2 {
     public static void main(String[] args) {
