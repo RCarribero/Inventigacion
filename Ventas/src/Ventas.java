@@ -12,11 +12,11 @@ public class Ventas {
                 System.out.println("¿Desea agregar un nuevo producto?");
                 decision=input.nextLine();
                 if (decision.equalsIgnoreCase("Si")) {
-                    Metodos.agregarProducto(lista, input,id);
+                    Producto.agregarProducto(lista, input,id);
                     id++;
                 }
             } while (!decision.equalsIgnoreCase("no"));
-            Metodos.calcularSuma(lista);
-            Metodos.orden(lista);
+            Producto.calcularSuma(lista);
+            Producto.orden(lista);
         }    
 }
