@@ -6,17 +6,18 @@ public class Ventas {
     public static void main(String[] args) {
         List<Producto> lista = new ArrayList<Producto>();
         String decision;
-        int id = 1;
+        int id = 0;
         Scanner input = new Scanner(System.in);
+        Producto producto=new Producto();
         do {
             System.out.println("¿Desea agregar un nuevo producto?");
             decision = input.nextLine();
             if (decision.equalsIgnoreCase("Si")) {
-                Producto.agregarProducto(lista, input, id);
                 id++;
+                producto.agregarProducto(lista, input, id);
             }
         } while (!decision.equalsIgnoreCase("no"));
-        Producto.calcularSuma(lista);
-        Producto.orden(lista);
+        producto.calcularSuma(lista);
+        producto.orden(lista);
     }
 }
