@@ -2,11 +2,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Producto {
-    public int idProducto;
+    private int idProducto;
 
-    public String nombre;
+    private String nombre;
 
-    public Double precio;
+    private Double precio;
     
     public void agregarProducto(List<Producto> lista, Scanner input) {
         System.out.println("Introduzca su nuevo producto:");
@@ -28,10 +28,15 @@ public class Producto {
     public  void orden(List<Producto> list) {
         System.out.println("Tienes " + list.size() + " productos en tu lista");
         for (int i = 0; i < list.size(); i++) {
-            System.out.println("El producto " + (i + 1) + " tiene la id " + list.get(i).getIdProducto() + " el nombre " + list.get(i).getNombre() + " y cuesta " + list.get(i).getPrecio());
-        }
+            System.out.println();
+        }   
     }
-
+    
+    @Override
+    public String toString() {
+        return "ID: " + idProducto + ", Nombre: " + nombre + ", Precio: " + precio + "€";
+    }
+    
 
     public Producto(int idProducto, String nombre, double precio) {
         this.idProducto = idProducto;

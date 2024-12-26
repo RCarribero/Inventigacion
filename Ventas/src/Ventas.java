@@ -17,5 +17,8 @@ public class Ventas {
         } while (!decision.equalsIgnoreCase("no"));
         producto.calcularSuma(lista);
         producto.orden(lista);
+        for (int i = 0; i < lista.size(); i++) {
+            System.out.println(lista.get(i).toString());
+        }
     }
 }
