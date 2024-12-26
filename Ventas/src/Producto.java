@@ -32,12 +32,13 @@ public class Producto {
         }   
     }
     
-    @Override
-    public String toString() {
-        return "ID: " + idProducto + ", Nombre: " + nombre + ", Precio: " + precio + "€";
-    }
+    
     
 
+    @Override
+    public String toString() {
+        return "Producto [idProducto=" + idProducto + ", nombre=" + nombre + ", precio=" + precio + "]";
+    }
     public Producto(int idProducto, String nombre, double precio) {
         this.idProducto = idProducto;
         this.nombre = nombre;
