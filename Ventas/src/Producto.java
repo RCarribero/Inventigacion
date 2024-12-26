@@ -3,19 +3,20 @@ import java.util.Scanner;
 
 public class Producto {
     public int idProducto;
-    
+
     public String nombre;
 
     public Double precio;
     
-    public void agregarProducto(List<Producto> lista, Scanner input, int id) {
+    public void agregarProducto(List<Producto> lista, Scanner input) {
         System.out.println("Introduzca su nuevo producto:");
         System.out.println("Introduce nombre");
         nombre = input.nextLine();
         System.out.println("Introduce precio");
         precio = input.nextDouble();
         input.nextLine();
-        lista.add(new Producto(id, nombre, precio));
+        idProducto++;
+        lista.add(new Producto(idProducto, nombre, precio));
     }
     public void calcularSuma(List<Producto> lista) {
         int total = 0;
