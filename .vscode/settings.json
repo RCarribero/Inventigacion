@@ -1,14 +1,7 @@
 {
-    "java.project.sourcePaths": [
-        "Ventas/ventas",
-        "Ventas/src",
-        "Traductor/src",
-        "Pruebas_array/src",
-        "Pruebas_POO/src",
-        "Pokemon/src",
-        "POO/src",
-        "Collections/src",
-        "Avanzado/src"
-    ],
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ]
 }
