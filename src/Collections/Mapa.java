@@ -14,7 +14,7 @@ public class Mapa {
         persona.entrySet().forEach(System.out::println);
         System.out.println("Iterando elementos por separado: ");
         persona.forEach((Llave,Valor)->{
-            System.out.println("Llave: "+Llave+" ,valor: "+Valor);
+        System.out.println("Llave: "+Llave+" ,valor: "+Valor);
         });
     }
 }
