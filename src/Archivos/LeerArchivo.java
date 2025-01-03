@@ -18,7 +18,7 @@ public class LeerArchivo {
             }
             entrada.close();
         } catch (Exception e) {
-            System.out.println("Error al leer: " + e);
+            System.out.println("Error al leer el archivo: " + e.getMessage());
         }
     }
 }
