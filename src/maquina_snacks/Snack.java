@@ -2,49 +2,61 @@ package maquina_snacks;
 
 import java.io.Serializable;
 
+// Clase Snack que representa un snack con id, nombre y precio
 public class Snack implements Serializable {
+    // Contador estático para llevar la cuenta de los snacks creados
     private static int contadorSnacks = Snacks.getSnacks().size();
 
+    // Método estático para obtener el contador de snacks
     public static int getContadorSnacks() {
         return contadorSnacks;
     }
 
+    // Atributos de la clase Snack
     private int idSnack;
     private String nombre;
-
     private double precio;
 
+    // Constructor por defecto
     public Snack() {
+        // Incrementa el contador de snacks y asigna el id
         this.idSnack = ++Snack.contadorSnacks;
     }
 
+    // Constructor con parámetros
     public Snack(String nombre, double precio) {
-        this();
+        this(); // Llama al constructor por defecto
         this.nombre = nombre;
         this.precio = precio;
     }
 
+    // Getter para el nombre
     public String getNombre() {
         return nombre;
     }
 
+    // Setter para el nombre
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    // Getter para el precio
     public double getPrecio() {
         return precio;
     }
 
+    // Setter para el precio
     public void setPrecio(double precio) {
         this.precio = precio;
     }
 
+    // Método toString para representar el objeto como una cadena
     @Override
     public String toString() {
         return "Snack [ idSnack=" + idSnack + ", nombre=" + nombre + ", precio=" + precio + "€ ]";
     }
 
+    // Método hashCode para generar un código hash único para cada objeto Snack
     @Override
     public int hashCode() {
         final int prime = 31;
