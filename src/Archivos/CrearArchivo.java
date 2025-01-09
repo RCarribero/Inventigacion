@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 
 public class CrearArchivo {
     public static void main(String[] args) {
-        String nombreArchivo = "mi_archivo2.txt";
+        String nombreArchivo = "Archivo.txt";
         File archivo =  new File(nombreArchivo);
         try {
             if(archivo.exists()){

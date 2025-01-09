@@ -4,16 +4,16 @@ import java.io.File;
 
 public class BorrarArchivo {
     public static void main(String[] args) {
-        String nombreArchivo = "mi_archivo2.txt";
-        File archivo =  new File(nombreArchivo);
-        if(archivo.exists()){
-            if(archivo.delete()){
-                System.out.println("El archivo ha sido borrado");
-            }else{
-                System.out.println("El archivo no pudo ser borrado");
-            }
-        }else{
-            System.out.println("El archivo no existe");
+        // Crear un objeto de tipo File con la ruta del archivo a borrar
+        File archivo = new File("Archivo.txt");
+
+        // Verificar si el archivo existe
+        if (archivo.exists()) {
+            // Borrar el archivo
+            archivo.delete();
+            System.out.println("El archivo se ha borrado correctamente.");
+        } else {
+            System.out.println("El archivo no existe.");
         }
     }
 }

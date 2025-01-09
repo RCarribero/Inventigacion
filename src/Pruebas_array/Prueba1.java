@@ -11,8 +11,9 @@ public class Prueba1 {
             opcion[i] = input.nextInt();
         }
         for (int i = 0; i < opcion.length; i++) {
-            System.out.println("La posicion "+(i+1)+" tiene el valor: "+opcion[i]);
+            System.out.print("["+opcion[i]+"]");
         }
+        System.out.println();
         for (int i = 0; i < opcion.length; i++) {
             sumaPrecio +=opcion[i];
             promedioPrecio=(sumaPrecio/opcion.length);
